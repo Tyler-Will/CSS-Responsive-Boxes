@@ -1,3 +1,88 @@
+/*{
+  outline: 1px solid red;
+  }*/
 body {
-  background: peachpuff;
+  background: snow;
+  height: 100vh;
+}
+div {
+  color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow:4px 4px 0 rgba(0, 0, 0, 1);
+    padding: 10px;
+}
+.container{
+  display: flex;
+min-height:100vh;
+flex-wrap: wrap;
+flex-direction: row;
+gap:2rem;
+justify-content: space-between;
+
+}
+.box{
+  width: 250px;
+  
+}
+.a{
+  width: 100%;
+  flex-grow: 2;
+  border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+}
+.b, .c, .d {
+  flex-grow: 1;
+  border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+}
+.e, .f, .g {
+  flex-grow: 1;
+  border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+}
+.h{
+  flex-grow: 2;
+  width: 100%;
+  font-size: 500px;
+  border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+  
+}
+
+@media (min-width: 600px) {
+  .container{
+    display: flex;
+  min-height:100vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap:2rem;
+  justify-content: flex-start
+  }
+  .box{
+    width: 450px;
+    height: 450px;
+  }
+  .a{
+    width: 100%;
+    border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+  }
+  .b, .c, .d {
+    border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+    
+  }
+  .e, .f, .g {
+    border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210); 
+  }
+  .h{
+    flex-grow: 1;
+    align-self:center ;
+    border: 1px solid rgb(80. 80, 80);
+  background-color: rgb(210, 210, 210);
+   
+    
+  }
 }
